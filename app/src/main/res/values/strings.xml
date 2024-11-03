@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IHearYou</string>
+    <string name="say_a_color_e_g_red">Say a color, e.g., Red</string>
+</resources>

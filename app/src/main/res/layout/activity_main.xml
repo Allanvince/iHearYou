@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/appLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/headphone1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/say_a_color_e_g_red"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/microphone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mic"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
