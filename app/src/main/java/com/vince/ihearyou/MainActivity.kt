@@ -10,6 +10,7 @@ import android.speech.SpeechRecognizer
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -117,7 +118,7 @@ class MainActivity : AppCompatActivity() {
 
         colorMap[colorName]?.let { colorRes ->
             val color = ContextCompat.getColor(this, colorRes)
-            findViewById<LinearLayout>(R.id.main).setBackgroundColor(color)
+            findViewById<RelativeLayout>(R.id.main).setBackgroundColor(color)
             provideFeedback(colorName)
         } ?: run {
             tvFeedback.text = "Color not recognized"
